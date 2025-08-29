@@ -41,3 +41,165 @@
       </nav>
     </div>
   </header>
+
+  <!-- Home -->
+  <section id="home" class="h-[500px] flex flex-col items-center justify-center text-center relative bg-cover bg-center" style="background-image: url('https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10">
+      <h1 class="text-4xl md:text-6xl font-extrabold neon-text mb-4">Hi <span id="user-greeting"></span></h1>
+      <p class="text-lg md:text-xl highlight-text">Welcome to Neotech – Technology, Innovation, Future.</p>
+    </div>
+  </section>
+
+  <!-- Our Profile -->
+  <section id="profile" class="py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-[2.2rem] font-extrabold text-cyan-400 drop-shadow-[0_0_15px_#3A86FF] text-center mb-10">Our Profile</h2>
+
+      <div class="flex flex-col md:flex-row gap-8 items-stretch mb-12">
+        <div class="flex-1 space-y-8">
+          <div class="bg-white/5 border border-cyan-400/30 backdrop-blur-[12px] transition hover:shadow-[0_0_20px_#00C9FF,0_0_30px_#3A86FF] hover:-translate-y-1.5 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4 text-[#00C9FF]">About NeoTech</h3>
+            <p>
+              Neotech is a technology company focused on <strong>digital innovation and modern business transformation</strong>. 
+              We deliver solutions powered by <strong>Artificial Intelligence (AI)</strong>, 
+              <strong>Internet of Things (IoT)</strong>, <strong>Blockchain</strong>, and 
+              <strong>Extended Reality (AR/VR)</strong> to support industries in today’s highly competitive landscape. 
+              By prioritizing <strong>efficiency, security, and sustainability</strong>, Neotech is committed to helping 
+              partners accelerate digital transformation and create added value across all operational areas.
+            </p>
+          </div>
+          <div class="bg-white/5 border border-cyan-400/30 backdrop-blur-[12px] transition hover:shadow-[0_0_20px_#00C9FF,0_0_30px_#3A86FF] hover:-translate-y-1.5 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4 text-[#00C9FF]">Our Vision</h3>
+            <p>
+              To become a leading technology company that provides <strong>impactful digital solutions</strong> and a 
+              <strong>trusted partner</strong> in driving global digital transformation.
+            </p>
+          </div>
+          <div class="bg-white/5 border border-cyan-400/30 backdrop-blur-[12px] transition hover:shadow-[0_0_20px_#00C9FF,0_0_30px_#3A86FF] hover:-translate-y-1.5 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4 text-[#00C9FF]">Our Mission</h3>
+            <ul class="list-disc list-inside space-y-2">
+              <li>Develop technology solutions that are <strong>innovative, scalable, and aligned</strong> with industry needs.</li>
+              <li>Deliver services with <strong>high-quality standards</strong>, focusing on client satisfaction.</li>
+              <li>Drive sustainable growth through <strong>research, innovation, and strategic collaboration</strong>.</li>
+              <li>Uphold <strong>integrity, professionalism, and sustainability</strong> in every aspect of our business.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex-1 rounded-lg overflow-hidden">
+          <img src="https://static.vecteezy.com/system/resources/previews/000/681/026/original/vertical-digital-technology-concept.jpg" alt="About NeoTech" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Headquarter -->
+  <section class="py-16 px-6 text-center bg-[#0D1B2A]">
+    <h3 class="text-2xl font-bold mb-10 text-[#00C9FF]">Our Headquarter</h3>
+    <div class="flex flex-wrap justify-center gap-10">
+      <div>
+        <div class="h-28 w-28 border-2 border-[#0D1B2A] rounded-full overflow-hidden mx-auto shadow-lg">
+          <img src="https://images.pexels.com/photos/4410426/pexels-photo-4410426.jpeg" alt="Tokyo" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-2 font-medium">Tokyo</p>
+      </div>
+      <div>
+        <div class="h-28 w-28 border-2 border-[#0D1B2A] rounded-full overflow-hidden mx-auto shadow-lg">
+          <img src="https://images.pexels.com/photos/3063411/pexels-photo-3063411.jpeg" alt="Osaka" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-2 font-medium">Osaka</p>
+      </div>
+      <div>
+        <div class="h-28 w-28 border-2 border-[#0D1B2A] rounded-full overflow-hidden mx-auto shadow-lg">
+          <img src="https://images.pexels.com/photos/28954744/pexels-photo-28954744.jpeg" alt="Yokohama" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-2 font-medium">Yokohama</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 px-6 bg-[#0A0F1F]">
+    <h2 class="text-[2.2rem] font-extrabold text-cyan-400 drop-shadow-[0_0_15px_#3A86FF] text-center mb-10">
+      Portfolio
+    </h2>
+    <div class="relative flex items-center justify-center max-w-5xl mx-auto">
+      
+      <!-- Button Prev -->
+      <button id="prev"
+        class="absolute -left-12 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg text-2xl font-bold cursor-pointer">
+        ‹
+      </button>
+
+  <!-- Carousel -->
+      <div class="relative w-[1032px] overflow-hidden">
+        <div id="carousel" class="flex gap-7 transition-transform duration-500 ease-in-out">
+          <div class="card min-w-[320px] max-w-[320px] bg-[#112240] rounded-lg shadow-md">
+            <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg"
+              class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-[#00C9FF]">Smart IoT System</h3>
+              <p class="text-gray-300">Automation and connectivity at your fingertips.</p>
+            </div>
+          </div>
+          <div class="card min-w-[320px] max-w-[320px] bg-[#112240] rounded-lg shadow-md">
+            <img src="https://images.pexels.com/photos/7562377/pexels-photo-7562377.jpeg"
+              class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-[#00C9FF]">VR/AR Solutions</h3>
+              <p class="text-gray-300">Immersive virtual experiences for industries.</p>
+            </div>
+          </div>
+          <div class="card min-w-[320px] max-w-[320px] bg-[#112240] rounded-lg shadow-md">
+            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg"
+              class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-[#00C9FF]">AI Analytics</h3>
+              <p class="text-gray-300">Predictive intelligence for better decisions.</p>
+            </div>
+          </div>
+          <div class="card min-w-[320px] max-w-[320px] bg-[#112240] rounded-lg shadow-md">
+            <img src="https://images.pexels.com/photos/17977092/pexels-photo-17977092.jpeg"
+              class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-4">
+              <h3 class="text-xl font-bold text-[#00C9FF]">Blockchain Technology</h3>
+              <p class="text-gray-300">Secure, transparent, and decentralized digital solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button Next -->
+      <button id="next"
+        class="absolute -right-12 top-1/2 -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg text-2xl font-bold cursor-pointer">
+        ›
+      </button>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="contact" class="py-16 px-6">
+    <h2 class="text-[2.2rem] font-extrabold text-cyan-400 drop-shadow-[0_0_15px_#3A86FF] text-center mb-10">Message Us</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+      <form id="contact-form" class="bg-white/5 border border-cyan-400/30 backdrop-blur-[12px] transition hover:shadow-[0_0_20px_#00C9FF,0_0_30px_#3A86FF] hover:-translate-y-1.5 p-6 rounded-lg space-y-4">
+        <div><label class="block font-semibold text-[#00C9FF]">Name</label><input id="name" type="text" class="w-full bg-transparent border border-cyan-400 text-white p-2 rounded-md outline-none focus:border-cyan-500 focus:shadow-[0_0_10px_#3A86FF] transition"></div>
+        <div><label class="block font-semibold text-[#00C9FF]">Birth Date</label><input id="dob" type="date" class="w-full bg-transparent border border-cyan-400 text-white p-2 rounded-md outline-none focus:border-cyan-500 focus:shadow-[0_0_10px_#3A86FF] transition"></div>
+        <div>
+          <label class="block font-semibold text-[#00C9FF]">Gender</label>
+          <div class="flex gap-4">
+            <label><input type="radio" name="gender" value="Male" class="mr-1"> Male</label>
+            <label><input type="radio" name="gender" value="Female" class="mr-1"> Female</label>
+          </div>
+        </div>
+        <div><label class="block font-semibold text-[#00C9FF]">Message</label><textarea id="message" class="w-full bg-transparent border border-cyan-400 text-white p-2 rounded-md outline-none focus:border-cyan-500 focus:shadow-[0_0_10px_#3A86FF] transition"></textarea></div>
+        <button type="submit" class="bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-bold py-3 px-4 rounded-lg uppercase transition hover:shadow-[0_0_20px_#00C9FF,0_0_30px_#3A86FF] w-full">Submit</button>
+      </form>
+      <div class="bg-white/5 border border-cyan-400/30 backdrop-blur-[12px] transition hover:shadow-[0_0_20px_#00C9FF,0_0_30px_#3A86FF] hover:-translate-y-1.5 p-6 rounded-lg">
+        <p><strong>Current time:</strong> <span id="current-time"></span></p>
+        <p><strong>Name:</strong> <span id="res-name"></span></p>
+        <p><strong>Birth Date:</strong> <span id="res-dob"></span></p>
+        <p><strong>Gender:</strong> <span id="res-gender"></span></p>
+        <p><strong>Message:</strong> <span id="res-message"></span></p>
+      </div>
+    </div>
+  </section>
