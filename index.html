@@ -15,3 +15,29 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="hidden bg-[#0A0F1F] text-white font-sans" id="main-content">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-[#0A0F1F] via-[#0D1B2A] to-[#123456] shadow sticky top-0 z-50">
+    <div class="container mx-auto flex flex-wrap items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-3">
+        <div class="h-12 w-12 rounded-full">
+          <img src="https://instazoid.com/wp-content/uploads/2022/01/react.png" alt="NeoTech Logo" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-extrabold text-2xl text-[#00C9FF] tracking-wide">NeoTech</h3>
+      </div>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="md:hidden text-[#00C9FF] text-3xl focus:outline-none transition-transform duration-300">
+        ☰
+      </button>
+
+      <!-- Navigation -->
+      <nav id="menu" class="hidden w-full md:flex md:w-auto mt-4 md:mt-0">
+        <ul class="flex flex-col md:flex-row md:gap-6 text-[#00C9FF] font-semibold w-full md:w-auto">
+          <li><a href="#home" class="px-3 py-2 rounded-lg transition duration-300 hover:bg-cyan-500/20 hover:text-cyan-400 hover:shadow-[0_0_10px_#00C9FF]">Home</a></li>
+          <li><a href="#profile" class="px-3 py-2 rounded-lg transition duration-300 hover:bg-cyan-500/20 hover:text-cyan-400 hover:shadow-[0_0_10px_#00C9FF]">Our Profile</a></li>
+          <li><a href="#portfolio" class="px-3 py-2 rounded-lg transition duration-300 hover:bg-cyan-500/20 hover:text-cyan-400 hover:shadow-[0_0_10px_#00C9FF]">Portfolio</a></li>
+          <li><a href="#contact" class="px-3 py-2 rounded-lg transition duration-300 hover:bg-cyan-500/20 hover:text-cyan-400 hover:shadow-[0_0_10px_#00C9FF]">Message Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
