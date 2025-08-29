@@ -73,3 +73,28 @@ prevBtn.addEventListener('click', () => {
   carousel.style.transition = 'transform 0.5s ease';
   carousel.style.transform = `translateX(${position}px)`;
 });
+
+// =======================
+// Message form
+// =======================
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value.trim();
+  const dob = document.getElementById('dob').value;
+  const gender = document.querySelector('input[name="gender"]:checked')?.value;
+  const message = document.getElementById('message').value.trim();
+
+  if (!name || !dob || !gender || !message) {
+    alert("Please fill in all fields!");
+    return;
+  }
+
+  document.getElementById('current-time').textContent = new Date().toString();
+  document.getElementById('res-name').textContent = name;
+  document.getElementById('res-dob').textContent = dob;
+  document.getElementById('res-gender').textContent = gender;
+  document.getElementById('res-message').textContent = message;
+
+  this.reset();
+});
