@@ -4,3 +4,13 @@ body {
 h1, h2, h3 {
   font-family: 'Orbitron', sans-serif;
 }
+
+.neon-text {
+  color: #00C9FF;
+  text-shadow: 0 0 15px #3A86FF, 0 0 25px rgba(0,0,0,0.8);
+}
+.highlight-text {
+  color: #00C2E2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  font-weight: bold;
+}
