@@ -1,4 +1,4 @@
-# Portfolio Website
+# Portfolio Website - Neotech
 
 ## Project Description
 This project is a responsive portfolio website developed to present a fictional technology company named **NeoTech**. The website is designed to demonstrate front-end web development, including structured layout design, responsive navigation, interactive user interfaces, and client-side form handling. The project emphasizes clarity, usability, and modern visual aesthetics while remaining fully client-side without server dependencies.
