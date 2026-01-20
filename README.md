@@ -23,7 +23,7 @@ All technologies were selected to ensure accessibility, maintainability, and eas
 
 ## Project Structure
 ```
-Portfolio-Website/
+portfolio-website/
 │
 ├── index.html
 │
